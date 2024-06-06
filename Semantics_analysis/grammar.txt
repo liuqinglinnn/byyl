@@ -1,0 +1,47 @@
+S -> program
+program -> public static void main(){ complex }
+complex -> sentence complex
+complex -> ε
+sentence -> assignment
+sentence -> type sentencecopy
+sentence -> continue;
+sentence -> break;
+sentence -> opdouble id;
+sentence -> id opdouble;
+sentencecopy->assignment
+sentencecopy->id;
+sentencecopy->[] id=new type[num];
+sentence -> ifsentence
+sentence -> ifelsesentence
+sentence -> whilesentece
+sentence -> forsentece
+ifsentence -> if logic { complex}
+ifelsesentence -> if logic { complex } else { complex }
+whilesentece -> while logic { complex }
+whilesentece -> do { complex } while logic;
+forsentece->for(id = F;id logicop F;id = T){ complex }
+logic -> ( F logicop F)
+assignment -> id = expression ;
+expression -> T
+T-> F Flast
+Flast-> op F Flast
+Flast->ε
+Flast->[num]
+logicop -> ==
+logicop -> >=
+logicop -> <=
+logicop -> >
+logicop -> <
+op-> +
+op-> -
+op-> *
+op-> /
+opdouble->++
+opdouble->--
+F-> num
+F-> id
+F-> real
+type-> int
+type-> double
+type-> String
+type-> char

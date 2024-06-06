@@ -1,0 +1,16 @@
+S -> program
+program -> public static void main(){ complex }
+complex -> sentence complex
+complex -> ε
+sentence -> assignment
+assignment->id=expression;
+expression -> T
+T-> F Flast
+Flast-> op F Flast
+Flast->ε
+F-> num
+F-> id
+op->+
+op->-
+op-> *
+op-> /

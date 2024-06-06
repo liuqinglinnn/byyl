@@ -1,0 +1,31 @@
+program          ->  id = function(pd0) pgm_body
+pd0                  ->   pd
+pd0                  -> ɛ
+pd                    ->   var_type id pd
+pd                    ->  var_type id
+var_type         ->  integer
+pgm_body    ->   decl stmt_list
+decl ->   var_decl  decl
+decl  ->  ɛ
+var_decl        ->var_type id_list ;
+id_list          ->id id_tail
+id_tail          ->, id id_tail
+id_tail          -> ɛ
+C1  -> [num] C1
+C1  ->  ɛ
+stmt_list         -> stmt M stmt_tail
+stmt_list        ->  ɛ
+stmt_tail       ->  stmt M stmt_tail1
+stmt_tail       ->  ɛ
+stmt              ->  base_stmt
+stmt              ->  if_stmt
+M1                 ->  ɛ
+if_stmt       -> IF ( cond ) M1 stmt_list N M2 else_part ENDIF
+
+expr          -> expr1 addop expr2
+expr          -> (expr1)
+expr          -> id
+expr          -> INTLITERAL
+
+addop         -> +
+

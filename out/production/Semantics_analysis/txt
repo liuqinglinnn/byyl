@@ -1,0 +1,29 @@
+        String input="program -> block\n" +
+                "block->{ decls  stmt}\n" +
+                "decls -> decl\n"+
+                "type -> type[num]\n"+
+                "stmt ->loc=bool;\n" +
+                "stmt ->if(bool)stmt\n" +
+                "stmt ->if(bool)stmt else stmt\n" +
+                "stmt ->while(bool)stmt\n" +
+                "stmt ->break;\n" +
+                "loc -> loc[num]\n"+
+                "loc -> id\n"+
+                "bool ->join\n" +
+                "join ->equality\n"+
+                "equality -> equality==rel\n" +
+                "equality -> rel\n"+
+                "rel -> expr<expr\n" +
+                "rel ->expr<=expr\n" +
+                "rel ->expr>=expr\n" +
+                "rel ->expr>expr\n" +
+                "rel ->expr\n"+
+                "expr -> expr+term\n"+
+                "expr ->expr-term\n" +
+                "expr ->term\n"+
+                "term -> term*unary\n" +
+                "term -> term/unary\n" +
+                "term -> factor\n"+
+                "factor-> loc\n" +
+                "factor->num\n" +
+                "factor->real\n";
