@@ -1,0 +1,19 @@
+vartype=非终结符,
+ C=非终结符,
+  decl=非终结符,
+  ifstmt=非终结符,
+   addop=非终结符,
+   stmtlist=非终结符,
+    program=非终结符,
+    vardecl=非终结符,
+     stmttail=非终结符,
+      M=非终结符,
+      idtail=非终结符,
+       pgmbody=非终结符,
+       pd=非终结符,
+        idlist=非终结符
+        ,
+        expr=非终结符
+        , stmt=非终结符}
+{num=终结符, integer=终结符, cond=终结符, N=终结符, elsepart=终结符, function=终结符, id=终结符, ɛ=终结符, [=终结符, ]=终结符, IF=终结符, (=终结符, ENDIF=终结符, )=终结符, basestmt=终结符, +=终结符, ,=终结符, 0=终结符, 1=终结符, 2=终结符, INTLITERAL=终结符, ;=终结符, ==终结符}
+0

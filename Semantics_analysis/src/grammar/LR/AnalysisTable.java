@@ -57,7 +57,11 @@ public class AnalysisTable {
             }
 
             move(mark); // 将 $ 符号移到末尾
-            AnalysisTable.get(Integer.parseInt(index)).put(key, Value); // 填入分析表
+            try {
+                AnalysisTable.get(Integer.parseInt(index)).put(key, Value); // 填入分析表
+            }catch (Exception e){
+                System.out.println(entry.getKey()+" "+entry.getValue());
+            }
         }
     }
 
