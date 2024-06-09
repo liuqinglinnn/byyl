@@ -1,15 +1,15 @@
-program          ->  id = function(pdP) pgmbody
-pdP                 ->   pd
-pdP                 -> ɛ
-pd                    ->   vartype id pd
+program          ->  id = function(pdi) { pgmbody }
+pdi -> pd
+pdi                 -> ɛ
+pd                    ->   vartype id , pd
 pd                    ->  vartype id
 vartype         ->  integer
 pgmbody    ->   decl stmtlist
 decl ->   vardecl  decl
 decl  ->  ɛ
 vardecl        ->vartype idlist ;
-idlist          ->id idtail
-idtail          ->, id idtail
+idlist          ->id CC idtail
+idtail          ->, id CC idtail
 idtail          -> ɛ
 CC -> [num] CC
 CC  ->  ɛ

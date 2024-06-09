@@ -20,7 +20,6 @@ public class maplist {
     public static void init(){
 
         lexical_list.put("integer","integer");
-        lexical_list.put("N","N");
         lexical_list.put("elsepart","elsepart");
         lexical_list.put("function","function");
         lexical_list.put("id","id");
